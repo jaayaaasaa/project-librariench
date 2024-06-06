@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome JQuizz</title>
+    <link rel="shortcut icon" type="image/jpg" href="assets/images/think.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;500&family=Nunito+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="top-container">
+        <div><a href="#" id="view-highscores" class="">View Highscores</a></div>
+        <div id="countdown-div">Time: <span id="countdown">120</span></div>
+    </div>
+    <div id="main-container">
+        <div id="start">
+            <h2>Quiz Pengetahuan Umum   </h2>
+            <p>
+                Apa yang anda ketahui tentang <em>semuanya?</em>
+                <br>Uji pengetahuan anda tentang berbagai macam Pengetahuan!<br>
+                <br>Cobalah untuk menjawab <strong>20 pertanyaan dalam 2 menit</strong>.
+                <br>Pengurangan <strong>5 detik akan di tambahkan</strong> jika jawaban anda salah.<br>Jangan terlalu banyak menghabiskan waktu di pertanyaan anda.
+            </p>
+            <div id="start-btn-div"><button id="start-quiz">Start Quiz</button></div>
+        </div>
+        <div id="questions" class="hide">
+            <h4><span id="question-number"></span>. <span id="question"></span></h4>
+            <div id="answer-buttons" class="">
+                <button id="first-option" class=""></button>
+                <button id="second-option" class=""></button>
+                <button id="third-option" class=""></button>
+                <button id="fourth-option" class=""></button>
+            </div>
+            <div id="next-div" class="hide">
+                <button id="next-question">Next</button>
+            </div>
+        </div>
+        <div id="complete" class="hide">
+            <h3 id="complete-msg">Kamu menjawab tepat waktuuu!!!.</h3>
+            <p id="complete-p">Skor andaa.... <span id="user-score">0</span><span id="user-score-msg"></span></p>
+            <h4>Simpan Score</h4>
+            <div id="highscore-input-div">
+                <input type="text" id="highscore-input" placeholder="Simpan Nama"><button id="submit-highscore">Submit</button>
+            </div>
+            <p id="input-message"></p>
+            <h4>lainnya</h4>
+            <br>
+            <button id="retake">Mulai Ulang Quiz</button>   
+        </div>
+        <div id="highscores" class="hide">
+            <h2>Highscore List</h2>
+            <ol id="highscore-list"></ol>
+            <div id="highscore-list-buttons">
+                <button id="go-to-start">Kembali ke Menu Awal</button>
+                <button id="clear-highscores", class="clear-highscores disabled">Clear highscores</button>                
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/questions.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
